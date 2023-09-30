@@ -1,0 +1,294 @@
+  @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+/*gral*/
+  *{      
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*titulos principales*/
+h1 {
+  font-family: 'Metal Mania', cursive;
+  color:rgb(0, 0, 0)          
+}
+
+/*formato txt 2rios*/
+h2{
+ text-align: center;
+ font-family: 'Metal Mania', cursive;
+ font-size: xx-large;
+ margin-top: 50px;
+ margin-bottom: 50px;
+}
+
+/*formato txt 3rios*/
+h3{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+ font-size: x-large;
+ text-align: center;
+ padding-bottom: 20px;
+}
+
+/*INICIO*/
+
+/*fondo de todas las paginas*/
+body{  
+  background-color: rgb(84, 79, 79); 
+}
+
+body img{
+  width: 100%;
+  height: 100%;
+}
+
+header{
+  width: 100%;
+  height: 100px;    
+  background-image: url(../img/imgheader.jpg);   
+  font-size: x-large;
+  }  
+
+  header{
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+  }
+
+  nav a:hover{
+    color: white;
+  }
+
+  .navbar img{       
+    width: 90px;
+    height: 90px;   
+  }   
+
+/*formato links*/
+a{
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;  
+}
+
+
+/*BIOGRAFIA*/
+
+/*formato txt biografia */
+.grafia{
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  text-align: justify;   
+  padding: 20px 10px;  
+}
+
+.fotos img{
+  width: 450px;
+  height: 450px;
+}
+  
+  .izq{
+    background-color:rgb(124, 216, 244);
+    background-image: linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.3)), url(../img/fondoBio.jpg);
+    display: flex;  
+    padding: 20px 10px;
+   margin: 10px 0px;
+  }
+
+  .dch{
+    background-color: blue;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.354), rgba(128, 128, 128, 0.354)), url(../img/fondoBio.jpg);
+    display: flex;
+    justify-content: right; 
+    padding: 20px 10px;  
+    margin: 10px 0px;
+  }
+
+  .fotos h3{
+    font-size: x-large;
+   text-decoration: underline;
+   text-transform: uppercase;
+  }
+
+  /*DISCOGRAFIA*/
+
+/*formato txt discos*/
+.discos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: black;
+  padding: 10px 10px; 
+  font-size: xx-large;      
+}
+
+ul{
+  margin: 20px 0px;
+}
+
+li{
+  list-style-type: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+
+/*tamaño imgs discos*/
+.discos img {
+  width: 500px;
+  height: 500px;    
+  padding-top: 15px 0px;
+}
+
+.discos h3{
+  text-decoration: underline;
+}
+
+.discos h4{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+  /*EQUIPO*/
+
+/*formato equipo*/
+.equipo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+
+/*imagenes equipos*/
+.equipo img{
+  width: 500px;
+  height: 500px; 
+}
+
+.espJ img{
+  width: 1200px;
+  height: 421px;
+}
+
+.espK img{
+  width: 1200px;
+  height: 421px;
+}
+
+  /*CONTACTO*/
+
+  form{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.354), rgba(128, 128, 128, 0.354)), url(../img/fondo3.jpg);
+    padding: 10px;    
+  }
+
+  .form-ctc h2 {
+    color: black;
+    font-weight: 400;
+  }
+
+  form input{
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+  }
+
+  form input::placeholder{
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  form textarea{
+    width: 100%;
+    height: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+  }
+
+  form textarea::placeholder{
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  .elegir{
+    color: black;
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+  }
+
+  .form-bs{
+    display: flex;
+    flex-direction: row;
+   color: black;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: x-large;
+   padding-right: 10px;   
+  }
+
+ select{
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color:transparent;
+ }
+
+/*boton enviar*/
+form .btn{  
+  width: 50%;
+  background-color: rgb(55, 55, 55);
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+  text-transform: uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.9);
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
+/*FOOTER*/
+
+footer{  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  background-color: yellow;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 0px 10px;
+  border-top: solid 5px black;
+}
+
+footer img{
+  width: 60px;
+  height: 60px;
+}
+
+
+
+
+
+
+
+
+
