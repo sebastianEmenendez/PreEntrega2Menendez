@@ -284,6 +284,11 @@ footer img{
   height: 60px;
 }
 
+@media (max-widht: 600px){
+  body {
+    background-color: aqua;
+  }
+}
 
 
 
