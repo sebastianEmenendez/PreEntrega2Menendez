@@ -37,12 +37,7 @@
     background-color: whitesmoke;
   }
 
-  body img {
-    width: 100%;
-    height: 100%;
-  }
-
-  header {
+    header {
     width: 100%;
     height: 100px;
     background-image: url(../img/imgheader.jpg);
@@ -148,7 +143,7 @@
     text-align: center;
   }
 
-  /*tamaño imgs discos*/
+   /*tamaño imgs discos*/
   .discos img {
     width: 500px;
     height: 500px;
@@ -164,9 +159,10 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline;
     padding-bottom: 10px;
+    text-align: center;
   }
 
- 
+   
   /*CONTACTO*/
 
   form {
@@ -266,6 +262,7 @@
     object-fit: cover;
   }
 
+  
     .gallery:nth-child(7) {
     grid-column-start: span 3;
   }
@@ -301,8 +298,8 @@
   }
 
   @media(max-width: 768px) {
-    body img {
-      height: 100%;
+    .carousel-inner img {
+      max-height: 100vh;
     }
 
     header {
