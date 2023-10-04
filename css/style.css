@@ -7,42 +7,43 @@
     text-decoration: none;
   }
 
+  /*fondo de todas las paginas*/
+  body {
+    background-color: whitesmoke;
+  }
+
   /*titulos principales*/
   h1 {
     font-family: 'Metal Mania', cursive;
     color: rgb(0, 0, 0)
   }
 
-  /*formato txt 2rios*/
+  /*txt 2rios*/
   h2 {
     text-align: center;
     font-family: 'Metal Mania', cursive;
     font-size: xx-large;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
   }
 
-  /*formato txt 3rios*/
+  /*txt 3rios*/
   h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: x-large;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
   }
 
-  /*INICIO*/
-
-  /*fondo de todas las paginas*/
-  body {
-    background-color: whitesmoke;
-  }
+  /*HEADER Y MENU NAVEGACION*/  
 
     header {
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
     background-image: url(../img/imgheader.jpg);
+    position: sticky;
+    top: 0;
   }
-
 
   .navbar {
     display: flex;
@@ -68,12 +69,6 @@
     text-transform: uppercase;
   }
 
-  header {
-    position: sticky;
-    top: 0;
-  }
-
-
   /*BIOGRAFIA*/
 
   /*formato txt biografia */
@@ -83,37 +78,47 @@
     color: rgb(0, 0, 0);
     font-weight: 900;
     text-align: justify;
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
   }
 
   .grafia h3 {
-    text-decoration: underline;
+    text-decoration: underline; /*datos de interes*/
   }
+
+/*imagenes james y rob*/
 
   .dch img {
-    width: 500px;
+    width: 500px; 
     height: 500px;
   }
+
+  /*lars y kirk*/
 
   .izq img {
-    width: 500px;
+    width: 500px; 
     height: 500px;
   }
 
-  .izq {
-    background-image: linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.3)), url(../img/fondoBio.jpg);
-    display: flex;
-    padding: 20px 10px;
-    margin: 10px 0px;
-  }
+  /*formato img james y rob*/
 
   .dch {
     background-image: linear-gradient(rgba(128, 128, 128, 0.354), rgba(128, 128, 128, 0.354)), url(../img/fondoBio.jpg);
     display: flex;
     justify-content: right;
-    padding: 20px 10px;
-    margin: 10px 0px;
+    padding: 1.25rem 0.625rem;
+    margin: 0.625rem 0;
   }
+
+  /*formato img lars y kirk*/
+
+  .izq {
+    background-image: linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.3)), url(../img/fondoBio.jpg);
+    display: flex;
+    padding: 1.25rem 0.625rem;
+    margin: 0.625px 0;
+  }
+
+  /*txt nombre de los 4*/
 
   .fotos h3 {
     font-size: x-large;
@@ -133,8 +138,10 @@
     font-size: xx-large;
   }
 
+/*ESTILO LISTA DE CANCIONES*/
+
   ul {
-    margin: 20px 0px;
+    margin: 1.25rem 0;
   }
 
   li {
@@ -144,21 +151,28 @@
   }
 
    /*tamaño imgs discos*/
+   
   .discos img {
-    width: 500px;
-    height: 500px;
-    padding-top: 15px 0px;
+    width: 31.25rem;
+    height: 31.25rem;
+    padding-top: 0.9375rem 0;
     background-position: center;
   }
 
+  /*TITULO DISCOS*/
+
   .discos h3 {
+    font-size: larger;
     text-decoration: underline;
   }
 
+  /*DISCO 1 Y 2 HARD*/
+
   .discos h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large; 
     text-decoration: underline;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
   }
 
@@ -170,67 +184,81 @@
     height: 100vh;
     background-color: grey;
     background-image: linear-gradient(rgba(128, 128, 128, 0.354), rgba(128, 128, 128, 0.354)), url(../img/fondo3.jpg);
-    padding: 10px;
+    padding: 0.625rem;
   }
+/*escribenos*/
 
   .form-ctc h2 {
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 400;
   }
 
+  /*txt para completar*/
+
   form input {
     width: 100%;
-    font-size: 25px;
+    font-size: 1.5625rem;
     border: none;
     color: white;
     background-color: transparent;
     border-bottom: 2px solid black;
-    padding-bottom: 15px;
+    padding-bottom: 0.9375rem;
   }
 
+  /*txt para completar*/
+
   form input::placeholder {
-    color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.85);
   }
+
+  /*txt para completar*/
 
   form textarea {
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: none;
     color: white;
     background-color: transparent;
     border-bottom: 2px solid black;
   }
 
+  /*txt para completar*/
+
   form textarea::placeholder {
-    color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.85);
   }
 
+/*menu desplegable*/
+
   .elegir {
-    color: black;
-    padding: 10px 0;
-    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 0.625rem 0;
+    font-size: 1.25rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: x-large;
   }
+
+  select {
+    font-size: 1.25rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent;
+  }
+
+  /*formato de bootstrap*/
 
   .form-bs {
     display: flex;
     flex-direction: row;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: x-large;
-    padding-right: 10px;
-  }
-
-  select {
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: transparent;
-  }
+    padding-right: 0.625rem;
+  }  
 
   /*boton enviar*/
+
   form .btn {
     width: 50%;
     background-color: rgb(55, 55, 55);
@@ -238,22 +266,22 @@
     font-size: x-large;
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 10px;
-    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.9);
-    margin-top: 20px;
-    padding: 10px;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.9375rem 0.9375rem 0 rgba(0, 0, 0, 0.9);
+    margin-top: 1.25rem;
+    padding: 0.625rem;
   }
 
   /* GALLERIA*/
 
   .container{
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: 300px;
-    grid-gap: 10px;
-    padding: 100px 0;
+    grid-template-rows: 18.75rem;
+    grid-gap: 0.625rem;
+    padding: 6.25rem 0;
   }
 
   .gallery img{
@@ -278,7 +306,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0 0.625rem;
     border-top: solid 5px black;
   }
 
@@ -289,12 +317,12 @@
   }
 
   .footerredes img {
-    margin: 0 10px;
+    margin: 0 0.625rem;
   }
 
   footer img {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
   }
 
   @media(max-width: 768px) {
@@ -306,8 +334,7 @@
       height: auto;
     }
 
-    .navbar {
-      /*display: flex;*/
+    .navbar {     
       flex-direction: column;
     }
 
@@ -316,7 +343,7 @@
     }
 
     .navbar img {
-      height: 2.8rem;
+      display: none;
     }
 
     footer {
@@ -336,27 +363,35 @@
     .izq img {
       width: 18.75rem;
       height: 18.75rem;     
-      padding-right: 10px;
-    }
-
-    .discos img{
-      width: 18.75rem;
-      height: 18.75rem;
-    }
-
-    .discos li{
-      font-size: large;
+      padding-right: 0.625rem;
     }
 
     .dch img {
       width: 18.75rem;
       height: 18.75rem;     
-      padding-left: 10px;
+      padding-left: 0.625rem;
       background-position: cover;
     }
 
+    .discos img{
+      width: 18.75rem;
+      height: 18.75rem;     
+    }
+
+    .discos li{
+      font-size: large;
+    }   
+
+    .discos h3 {
+      font-size: large;
+    }
+
+    .discos h4{
+      font-size: small;
+    }
+
     .container{
-      padding: 5px;
+      padding: 0.3125rem;
       grid-template-columns: repeat(1, 1fr);
     }
 

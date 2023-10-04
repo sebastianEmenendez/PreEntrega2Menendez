@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <header>
         <nav>
@@ -31,41 +29,44 @@
         </nav>
     </header>
     <main>
-        <form method="post" name="contacto">
-            <div class="form-ctc">
-                <h2>ESCRIBENOS</h2>
-                <div>
-                    <input type="text" name="nombre" placeholder="Escribe tu Nombre">
-                    <input type="text" name="apellido" placeholder="Escribe tu Apellido">
-                    <input type="text" name="pais" placeholder="Tu Pais">
-                    <input type="email" name="email" required placeholder="Tu Email">
-                    <textarea name="Por que Metallica" id="" cols="30" rows="10"
-                        placeholder="...por que Metallica?"></textarea>
+        <section>
+            <form method="post" name="contacto">
+                <div class="form-ctc">
+                    <h2>ESCRIBENOS</h2>
+                    <div>
+                        <input type="text" name="nombre" placeholder="Escribe tu Nombre">
+                        <input type="text" name="apellido" placeholder="Escribe tu Apellido">
+                        <input type="text" name="pais" placeholder="Tu Pais">
+                        <input type="email" name="email" required placeholder="Tu Email">
+                        <textarea name="Por que Metallica" id="" cols="30" rows="10"
+                            placeholder="...por que Metallica?"></textarea>
+                    </div>
+                    <div class="form-bs">
+                        <p class="form-bs">LA VISTE EN VIVO</p>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1"></label>
+                    </div>
+                    <div class="form-bs">
+                        <p class="form-bs">NO LA VISTE EN VIVO</p>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2"> </label>
+                    </div>
+                    <div>
+                        <p class="elegir">INTEGRANTE FAVORITO</p>
+                        <select name="" id="">
+                            <option value="#"></option>
+                            <option value="l">Lars</option>
+                            <option value="j">James</option>
+                            <option value="k">Kirk</option>
+                            <option value="t">Trujillo</option>
+                            <option value="t">Mustaine</option>
+                            <option value="t">Newsted</option>
+                        </select>
+                    </div>
+                    <input type="submit" name="enviar" class="btn">
                 </div>
-                <div class="form-bs">
-                    <p class="form-bs">LA VISTE EN VIVO</p>
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1"></label>
-                </div>
-                <div class="form-bs">
-                    <p class="form-bs">NO LA VISTE EN VIVO</p>
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2"> </label>
-                </div>
-                <div>
-                    <p class="elegir">INTEGRANTE FAVORITO</p>
-                    <select name="" id="">
-                        <option value="#"></option>
-                        <option value="l">Lars</option>
-                        <option value="j">James</option>
-                        <option value="k">Kirk</option>
-                        <option value="t">Trujillo</option>
-                        <option value="t">Mustaine</option>
-                        <option value="t">Newsted</option>
-                    </select>
-                </div>
-                <input type="submit" name="enviar" class="btn">
-            </div>
+        </section>
     </main>
     </form>
     <footer>
@@ -84,5 +85,4 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
