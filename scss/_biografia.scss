@@ -1,0 +1,58 @@
+/*formato txt biografia */
+.grafia {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    text-align: justify;
+    padding: 1.25rem 0.625rem;
+  }
+
+  .grafia p {
+    margin-bottom: 1rem;
+  }
+
+  .grafia h3 {
+    text-decoration: underline; /*datos de interes*/
+  }
+
+/*imagenes james y rob*/
+
+  .dch img {
+    width: 500px; 
+    height: 500px;
+  }
+
+  /*lars y kirk*/
+
+  .izq img {
+    width: 500px; 
+    height: 500px;
+  }
+
+  /*formato img james y rob*/
+
+  .dch {
+    background-image: linear-gradient(rgba(128, 128, 128, 0.354), rgba(128, 128, 128, 0.354)), url(../img/fondoBio.jpg);
+    display: flex;
+    justify-content: right;
+    padding: 1.25rem 0.625rem;
+    margin: 0.625rem 0;
+  }
+
+  /*formato img lars y kirk*/
+
+  .izq {
+    background-image: linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.3)), url(../img/fondoBio.jpg);
+    display: flex;
+    padding: 1.25rem 0.625rem;
+    margin: 0.625px 0;
+  }
+
+  /*txt nombre de los 4*/
+
+  .fotos h3 {
+    font-size: x-large;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }

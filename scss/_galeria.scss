@@ -1,0 +1,26 @@
+ /* GALLERIA*/
+
+ .container{
+   max-width: 75rem;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 3fr);
+   grid-template-rows: 18.75rem;
+   grid-gap: 0.625rem;
+   padding: 6.25rem 0;
+ }
+
+ .gallery img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ 
+   .gallery:nth-child(7) {
+   grid-column-start: span 3;
+ }
+ 
+
+  
+ 
