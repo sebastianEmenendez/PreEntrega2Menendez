@@ -92,3 +92,9 @@
     margin-top: 1.25rem;
     padding: 0.625rem;
   }
+
+  @media(max-width: 768px){
+    .dch {
+      background-image: none;
+    }
+  }

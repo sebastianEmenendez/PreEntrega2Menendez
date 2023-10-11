@@ -8,37 +8,17 @@
     color: black;
     padding: 10px 10px;
     font-size: xx-large;
+    img {
+      width: 31.25rem;
+      height: 31.25rem;
+      padding-top: 0.9375rem 0;
+      background-position: center;
+    }
+    h3 {
+      font-size: larger;
+      text-decoration: underline;     
+    }
   }
-
-/*ESTILO LISTA DE CANCIONES*/
-
-  ul {
-    margin: 1.25rem 0;
-  }
-
-  li {
-    list-style-type: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-  }
-
-   /*tamaño imgs discos*/
-   
-  .discos img {
-    width: 31.25rem;
-    height: 31.25rem;
-    padding-top: 0.9375rem 0;
-    background-position: center;
-  }
-
-  /*TITULO DISCOS*/
-
-  .discos h3 {
-    font-size: larger;
-    text-decoration: underline;
-  }
-
-  /*DISCO 1 Y 2 HARD*/
 
   .discos h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -47,3 +27,16 @@
     padding-bottom: 0.625rem;
     text-align: center;
   }
+
+/*ESTILO LISTA DE CANCIONES*/
+
+  ul {
+    margin: 1.25rem 0;
+    li {
+      list-style-type: none;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+  } 
+
+  

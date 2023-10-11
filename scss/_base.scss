@@ -1,23 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 
-/*gral*/
-* {
+/*GRAL*/ 
+
+* { 
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
 }
 
-/*fondo de todas las paginas*/
+$fondohtml: whitesmoke;
+$fonttxtheader: 'Metal Mania', cursive;
+$colortxtheader: rgb(0, 0, 0);
+$fonttxth234:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ /*FONDO PARA HTML*/
+
 body {
-    background-color: whitesmoke;
+    background-color: $fondohtml;  
 }
 
 /*HEADER Y MENU NAVEGACION*/
 
-header {
+header {    
     width: 100%;
-    height: 6.25rem;
+    height: 6.5rem;
     background-image: url(../img/imgheader.jpg);
     position: sticky;
     top: 0;
@@ -28,8 +35,8 @@ header {
         list-style: none;
     }
     a {
-        color: rgb(0, 0, 0);
-        font-size: xx-large;
+        color: $colortxtheader;
+        font-size: 2rem;
         font-weight: 750;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-transform: uppercase;
@@ -43,39 +50,38 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    img {
+        width: 90px;
+        height: 90px;
+    }
 }
 
-.navbar img {
-    width: 90px;
-    height: 90px;
-}
+/*TITULO PRINCIPAL*/
 
-/*titulos principales*/
 h1 {
-    font-family: 'Metal Mania', cursive;
-    color: rgb(0, 0, 0);
+    font-family: $fonttxtheader;
+    color: $colortxtheader;
 }
 
 h2 {
     text-align: center;
-    font-family: 'Metal Mania', cursive;
+    font-family: $fonttxth234;
     font-size: xx-large;
     margin-top: 3.125rem;
     margin-bottom: 3.125rem;   
 }
 
 h3 {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: $fonttxth234;
     font-size: x-large;
     text-align: center;
     padding-bottom: 1.25rem;
 }
 
+  /*FOOTER*/
 
-/*FOOTER*/
-
-footer {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+footer {  
+    font-family: $fonttxth234;
     font-size: x-large;
     background-color: whitesmoke;
     height: 100%;
@@ -84,19 +90,19 @@ footer {
     align-items: center;
     padding: 0 0.625rem;
     border-top: solid 5px black;
+    img {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
 }
 
 .footerredes {
     text-decoration: none;
     display: flex;
     align-items: center;
+    img {
+        margin: 0 0.625rem;
+    }
 }
 
-.footerredes img {
-    margin: 0 0.625rem;
-}
 
-footer img {
-    width: 3.125rem;
-    height: 3.125rem;
-}

@@ -1,20 +1,19 @@
-/*formato txt biografia */
-.grafia {
+/*FORMATO TXT BIOGRAFIA */
+
+.grafia { 
     font-size: x-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
     font-weight: 900;
     text-align: justify;
     padding: 1.25rem 0.625rem;
-  }
-
-  .grafia p {
-    margin-bottom: 1rem;
-  }
-
-  .grafia h3 {
-    text-decoration: underline; /*datos de interes*/
-  }
+    p { 
+      margin-bottom: 1.5rem;
+     }
+     h3 {
+      text-decoration: underline; /*datos de interes*/
+    }
+  }   
 
 /*imagenes james y rob*/
 
@@ -56,3 +55,5 @@
     text-decoration: underline;
     text-transform: uppercase;
   }
+
+  
