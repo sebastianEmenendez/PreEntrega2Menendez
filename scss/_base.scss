@@ -11,6 +11,7 @@
 }
 
 $fondohtml: whitesmoke;
+/*$fondoheader: rgb(200, 200, 200);*/
 $fonttxtheader: 'Metal Mania', cursive;
 $colortxtheader: rgb(0, 0, 0);
 $colortxt234: black;
@@ -41,9 +42,9 @@ body {
 /*HEADER Y MENU NAVEGACION*/
 
 header {    
-    background-color: $fondohtml;
-    width: 100%;
-    height: 6.5rem;    
+    background: linear-gradient(to left, rgb(156, 156, 156)10%, rgb(169, 174, 38))90%;
+    /*background-color: $fondoheader;*/
+    width: 100%;   
     position: sticky;
     top: 0;
     ul {
@@ -51,6 +52,9 @@ header {
     }
     li {
         list-style: none;
+        &:hover{
+            transform: translate(1px, -5px);
+        }
     }
     a {
         color: $colortxtheader;
@@ -59,7 +63,7 @@ header {
         font-family: $fonttxth234;
         text-transform: uppercase;
         &:hover {
-            color: rgb(101, 101, 101);
+            color: rgb(255, 255, 255);
         }
     }
 }
@@ -100,8 +104,7 @@ h3 {
 footer {  
     font-family: $fonttxth234;
     font-size: nth($fuentesize, 2 );
-    background-color: $fondohtml;
-    height: 100%;
+    background-color: $fondohtml;   
     @extend %tipodeflex;
     padding: 0 0.625rem;
     border-top: solid 5px black;
