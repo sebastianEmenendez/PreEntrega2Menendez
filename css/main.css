@@ -5,9 +5,10 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  box-sizing: border-box;
 }
 
-.footerredes, footer {
+.footerredes, footer, .navbar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -19,36 +20,35 @@ body {
 }
 
 /*HEADER Y MENU NAVEGACION*/
-/*header {    
-    background-color: bisque;
-    width: 100%;
-    height: 6.5rem;    
-    position: sticky;
-    top: 0;
-    ul {
-        list-style: none;
-    }
-    li {
-        list-style: none;
-    }
-    a {
-        color: $colortxtheader;
-        font-size: nth($fuentesize, 1 );
-        font-weight: 750;
-        font-family: $fonttxth234;
-        text-transform: uppercase;
-        &:hover {
-            color: rgb(255, 247, 0);
-        }
-    }
-}*/
-/*.navbar {
-   @extend %tipodeflex;
-    img {
-        width: 5.6rem;
-        height: 5.6rem;
-    }
-}*/
+header {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 6.5rem;
+  position: sticky;
+  top: 0;
+}
+header ul {
+  list-style: none;
+}
+header li {
+  list-style: none;
+}
+header a {
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
+  font-weight: 750;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+header a:hover {
+  color: rgb(101, 101, 101);
+}
+
+.navbar img {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
 /*TITULO PRINCIPAL*/
 h1 {
   font-family: "Metal Mania", cursive;
@@ -300,8 +300,67 @@ form .btn {
 }
 
 @media (max-width: 768px) {
-  .dch {
-    background-image: none;
+  header {
+    height: auto;
+  }
+  h2 {
+    font-size: large;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar a {
+    font-size: medium;
+  }
+  .navbar img {
+    display: none;
+  }
+  footer {
+    font-size: medium;
+    flex-direction: column;
+  }
+  .grafia {
+    display: none;
+  }
+  .fotos h3 {
+    font-size: medium;
+    text-align: center;
+  }
+  .izq img {
+    width: 18.75rem;
+    height: 18.75rem;
+    padding-right: 10px;
+  }
+  .discos h3 {
+    font-size: large;
+  }
+  .discos h4 {
+    font-size: large;
+  }
+  .discos img {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 0 5rem;
+  }
+  .discos li {
+    font-size: large;
+  }
+  .dch img {
+    width: 18.75rem;
+    height: 18.75rem;
+    padding-left: 10px;
+    background-position: cover;
+  }
+  .container {
+    padding: 5px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery:nth-child(7) {
+    grid-column-start: span 1;
+  }
+  form {
+    background-position: center;
   }
 }
 

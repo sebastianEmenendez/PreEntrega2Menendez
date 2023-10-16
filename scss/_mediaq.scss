@@ -1,0 +1,82 @@
+
+@media(max-width: 768px) {    
+
+    header {
+      height: auto;
+    }
+
+    h2{
+        font-size: large;
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: column;      
+    }
+
+    .navbar a {
+      font-size: medium;
+    }
+
+    .navbar img {     
+      display: none;
+    }
+
+    footer {
+      font-size: medium;      
+      flex-direction: column;
+    }
+
+    .grafia {
+      display: none;      
+    }
+
+    .fotos h3 {
+      font-size: medium;
+      text-align: center;
+    }
+
+    .izq img {
+      width: 18.75rem;
+      height: 18.75rem;     
+      padding-right: 10px;
+    }
+
+    .discos h3{
+        font-size: large;
+    }
+
+    .discos h4{
+        font-size: large;
+    }
+
+    .discos img{
+      width: 18.75rem;
+      height: 18.75rem;
+      margin: 0 5rem;
+    }
+
+    .discos li{
+      font-size: large;
+    }
+
+    .dch img {
+      width: 18.75rem;
+      height: 18.75rem;     
+      padding-left: 10px;
+      background-position: cover;
+    }
+
+    .container{
+      padding: 5px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery:nth-child(7) {
+      grid-column-start: span 1;
+    }
+
+    form {
+      background-position: center;
+    }
+  }
