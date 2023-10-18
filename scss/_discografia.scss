@@ -26,6 +26,13 @@ $fuentesize:
       width: 31rem;
       height: 31rem;        
     }   
+    ul{
+      margin-top: 1rem;
+    }
+    li{
+      margin: 0.2rem 0;
+    }
+
   }
 
   .discos h4 {
@@ -38,8 +45,7 @@ $fuentesize:
 
 /*ESTILO LISTA DE CANCIONES*/
 
-  ul {
-    margin: 1.25rem 0;
+  ul {    
     li {      
       font-family: $fonttxth234;
       text-align: center;
