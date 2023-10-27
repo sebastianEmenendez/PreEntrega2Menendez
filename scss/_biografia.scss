@@ -18,9 +18,38 @@ $fuentesize:
   text-align: start;
 }
 
-
-
 /*FORMATO TXT BIOGRAFIA */
+
+
+.datos {
+  font-size: nth($fuentesize, 3);
+  font-family: $fonttxth234;
+  color: $colortxtbio;
+  font-weight: 900;
+  text-align: justify;
+  padding: 0 0.6rem;
+  p {
+    margin-bottom: 2rem;
+  }
+  h3 {  /*datos de interes*/
+    text-decoration: underline;   
+  }
+}
+
+.intrografia {
+  font-size: nth($fuentesize, 2);
+  font-family: $fonttxth234;
+  color: $colortxtbio;
+  font-weight: 900;
+  text-align: justify;
+  padding: 0 0.6rem;
+  p {
+    margin-bottom: 2rem;
+  }
+  h3 {  /*datos de interes*/
+    text-decoration: underline;   
+  }
+}
 
 .grafia {
   font-size: nth($fuentesize, 2);
@@ -29,7 +58,6 @@ $fuentesize:
   font-weight: 900;
   text-align: justify;
   padding: 0 0.6rem;
-
   p {
     margin-bottom: 2rem;
   }

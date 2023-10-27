@@ -10,12 +10,11 @@
     box-sizing: border-box;
 }
 
-$fondohtml: whitesmoke;
-/*$fondoheader: rgb(200, 200, 200);*/
+
 $fonttxtheader: 'Metal Mania', cursive;
 $colortxtheader: rgb(0, 0, 0);
 $colortxt234: black;
-$fonttxth234:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$fonttxth234:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $fuentesize:
 xx-large
 x-large
@@ -36,45 +35,36 @@ right
  /*FONDO PARA HTML*/
 
 body {
-    background-color: $fondohtml;  
+    background: linear-gradient(to right, rgb(237, 237, 237)30%, rgb(167, 167, 162));  
 }
 
 /*HEADER Y MENU NAVEGACION*/
 
-header {    
-    background: linear-gradient(to left, rgb(156, 156, 156)10%, rgb(169, 174, 38))90%;
-    /*background-color: $fondoheader;*/
-    width: 100%;   
-    position: sticky;
-    top: 0;
-    ul {
-        list-style: none;
-    }
-    li {
-        list-style: none;
-        &:hover{
-            transform: translate(1px, -5px);
-        }
-    }
-    a {
+.navbar-nav li{    
+    font-family: $fonttxth234;
+    font-size: nth($fuentesize , 2 );
+    color: black;   
+    align-items: center ;
+    padding: 0 1rem;
+    &:hover{
+        transform: translate(0, -2px);
+    }     
+    a{
         color: $colortxtheader;
-        font-size: nth($fuentesize, 1 );
-        font-weight: 750;
-        font-family: $fonttxth234;
-        text-transform: uppercase;
-        &:hover {
-            color: rgb(255, 255, 255);
+        &:hover{
+            color: rgb(100, 100, 100);
         }
-    }
+    }       
 }
-
 .navbar {
    @extend %tipodeflex;
     img {
-        width: 5.6rem;
-        height: 5.6rem;
+        width: 5rem;
+        height: 5rem;
     }
 }
+
+
 
 /*TITULO PRINCIPAL*/
 
@@ -103,14 +93,17 @@ h3 {
 
 footer {  
     font-family: $fonttxth234;
-    font-size: nth($fuentesize, 2 );
-    background-color: $fondohtml;   
+    font-size: nth($fuentesize, 2 );    
     @extend %tipodeflex;
-    padding: 0 0.625rem;
+    padding: 0 0.5rem;
     border-top: solid 5px black;
     img {
-        width: 3.125rem;
-        height: 3.125rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    p{
+        margin-top: 1rem;
+        color: black;
     }
 }
 

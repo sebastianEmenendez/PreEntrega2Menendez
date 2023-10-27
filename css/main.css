@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-/*$fondoheader: rgb(200, 200, 200);*/
 .footerredes, footer, .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -17,40 +16,30 @@
 
 /*FONDO PARA HTML*/
 body {
-  background-color: whitesmoke;
+  background: linear-gradient(to right, rgb(237, 237, 237) 30%, rgb(167, 167, 162));
 }
 
 /*HEADER Y MENU NAVEGACION*/
-header {
-  background: linear-gradient(to left, rgb(156, 156, 156) 10%, rgb(169, 174, 38)) 90%;
-  /*background-color: $fondoheader;*/
-  width: 100%;
-  position: sticky;
-  top: 0;
+.navbar-nav li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: x-large;
+  color: black;
+  align-items: center;
+  padding: 0 1rem;
 }
-header ul {
-  list-style: none;
+.navbar-nav li:hover {
+  transform: translate(0, -2px);
 }
-header li {
-  list-style: none;
-}
-header li:hover {
-  transform: translate(1px, -5px);
-}
-header a {
+.navbar-nav li a {
   color: rgb(0, 0, 0);
-  font-size: xx-large;
-  font-weight: 750;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
 }
-header a:hover {
-  color: rgb(255, 255, 255);
+.navbar-nav li a:hover {
+  color: rgb(100, 100, 100);
 }
 
 .navbar img {
-  width: 5.6rem;
-  height: 5.6rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 /*TITULO PRINCIPAL*/
@@ -61,7 +50,7 @@ h1 {
 
 h2 {
   color: black;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: xx-large;
   text-align: center;
   margin: 3rem 0;
@@ -69,7 +58,7 @@ h2 {
 
 h3 {
   color: black;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: x-large;
   text-align: center;
   margin: 3rem 0;
@@ -77,15 +66,18 @@ h3 {
 
 /*FOOTER*/
 footer {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: x-large;
-  background-color: whitesmoke;
-  padding: 0 0.625rem;
+  padding: 0 0.5rem;
   border-top: solid 5px black;
 }
 footer img {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 3rem;
+  height: 3rem;
+}
+footer p {
+  margin-top: 1rem;
+  color: black;
 }
 
 .footerredes {
@@ -107,6 +99,36 @@ footer img {
 }
 
 /*FORMATO TXT BIOGRAFIA */
+.datos {
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: 900;
+  text-align: justify;
+  padding: 0 0.6rem;
+}
+.datos p {
+  margin-bottom: 2rem;
+}
+.datos h3 { /*datos de interes*/
+  text-decoration: underline;
+}
+
+.intrografia {
+  font-size: x-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: 900;
+  text-align: justify;
+  padding: 0 0.6rem;
+}
+.intrografia p {
+  margin-bottom: 2rem;
+}
+.intrografia h3 { /*datos de interes*/
+  text-decoration: underline;
+}
+
 .grafia {
   font-size: x-large;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -305,7 +327,7 @@ form .btn {
   padding: 0.6rem;
 }
 
-@media (max-width: 768px) and (max-width: 600px) {
+@media (max-width: 600px) {
   header {
     height: auto;
   }
@@ -320,21 +342,23 @@ form .btn {
     font-size: medium;
   }
   .navbar img {
-    display: none;
+    width: 2.5rem;
+    height: 2.5rem;
   }
-  footer {
-    font-size: medium;
-    flex-direction: column;
-  }
-  footer img {
-    width: 2rem;
-    height: 2rem;
+  .intrografia {
+    font-size: small;
   }
   .grafia {
     display: none;
   }
+  .izq {
+    border: solid 0.2rem black;
+  }
+  .dch {
+    border: solid 0.2rem rgb(0, 0, 0);
+  }
   .fotos h3 {
-    font-size: medium;
+    font-size: small;
     text-align: center;
   }
   .izq img {
@@ -349,19 +373,20 @@ form .btn {
     font-size: large;
   }
   .discos img {
-    width: 18.75rem;
-    height: 18.75rem;
+    width: 15rem;
+    height: 15rem;
     margin: 0 5rem;
   }
   .discos li {
     font-size: large;
   }
   .dch img {
-    width: 18.75rem;
-    height: 18.75rem;
+    width: 15rem;
+    height: 15rem;
     padding-left: 10px;
     background-position: cover;
   }
+  /*GALERIA*/
   .container {
     padding: 5px;
     grid-template-columns: repeat(1, 1fr);
@@ -429,16 +454,25 @@ form .btn {
   }
   /*boton enviar*/
   form .btn {
-    width: 25%;
+    width: 20%;
     background-color: rgb(255, 247, 0);
     color: black;
-    font-size: larger;
+    font-size: small;
     text-transform: uppercase;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     border-radius: 0.6rem;
     box-shadow: 0 0.9rem 0.9rem 0 rgba(0, 0, 0, 0.9);
     margin-top: 1rem;
     padding: 0.6rem;
+  }
+  footer {
+    margin: 1.5rem 0;
+    font-size: medium;
+    flex-direction: column;
+  }
+  footer img {
+    width: 1.8rem;
+    height: 1.8rem;
   }
 }
 
