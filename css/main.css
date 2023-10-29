@@ -114,6 +114,14 @@ footer p {
   text-decoration: underline;
 }
 
+.datosdos {
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: 900;
+  text-align: justify;
+}
+
 .intrografia {
   font-size: x-large;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -327,7 +335,7 @@ form .btn {
   padding: 0.6rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header {
     height: auto;
   }
@@ -345,9 +353,17 @@ form .btn {
     width: 2.5rem;
     height: 2.5rem;
   }
+  .datos {
+    font-size: medium;
+  }
+  .datosdos {
+    display: none;
+  }
+  /*biografia inicio*/
   .intrografia {
     font-size: small;
   }
+  /*bio integrantes*/
   .grafia {
     display: none;
   }
@@ -357,34 +373,44 @@ form .btn {
   .dch {
     border: solid 0.2rem rgb(0, 0, 0);
   }
+  /*nombre miembros*/
   .fotos h3 {
     font-size: small;
     text-align: center;
   }
+  /*img miembros*/
   .izq img {
-    width: 18.75rem;
-    height: 18.75rem;
-    padding-right: 10px;
-  }
-  .discos h3 {
-    font-size: large;
-  }
-  .discos h4 {
-    font-size: large;
-  }
-  .discos img {
     width: 15rem;
     height: 15rem;
-    margin: 0 5rem;
-  }
-  .discos li {
-    font-size: large;
+    padding-right: 0.5rem;
   }
   .dch img {
     width: 15rem;
     height: 15rem;
-    padding-left: 10px;
-    background-position: cover;
+    padding-left: 0.5rem;
+  }
+  /*discografia*/
+  /*titulo discos*/
+  .discos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  .discos h3 {
+    font-size: large;
+  }
+  /*disco 1 y 2*/
+  .discos h4 {
+    font-size: large;
+  }
+  /*img discos*/
+  .discos img {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto;
+  }
+  .discos li {
+    font-size: large;
   }
   /*GALERIA*/
   .container {
@@ -394,10 +420,10 @@ form .btn {
   .gallery:nth-child(7) {
     grid-column-start: span 1;
   }
+  /*CONTACTO*/
   form {
     background-position: center;
   }
-  /*CONTACTO*/
   /*escribenos*/
   .form-ctc h2 {
     color: white;
@@ -465,6 +491,7 @@ form .btn {
     margin-top: 1rem;
     padding: 0.6rem;
   }
+  /*footer*/
   footer {
     margin: 1.5rem 0;
     font-size: medium;
@@ -473,6 +500,17 @@ form .btn {
   footer img {
     width: 1.8rem;
     height: 1.8rem;
+  }
+}
+@media (max-width: 414px) {
+  .datos {
+    font-size: smaller;
+  }
+  .datos h3 {
+    font-size: medium;
+  }
+  footer p {
+    text-align: center;
   }
 }
 

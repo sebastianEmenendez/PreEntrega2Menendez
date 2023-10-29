@@ -1,5 +1,5 @@
 
-@media(max-width: 600px) {    
+@media(max-width: 768px) {    
 
     header {
       height: auto;
@@ -23,9 +23,21 @@
       height: 2.5rem;
     }    
 
+    .datos{
+      font-size: medium;
+    }
+
+    .datosdos{
+      display: none;      
+    }
+
+    /*biografia inicio*/    
+
     .intrografia {
       font-size: small;
     }
+
+    /*bio integrantes*/
 
     .grafia {      
       display: none;
@@ -39,41 +51,57 @@
       border: solid 0.2rem rgb(0, 0, 0);
     }
 
+    /*nombre miembros*/
+
     .fotos h3 {
       font-size: small;
       text-align: center;
     }
 
+    /*img miembros*/
+
     .izq img {
-      width: 18.75rem;
-      height: 18.75rem;     
-      padding-right: 10px;
+      width: 15rem;
+      height: 15rem;     
+      padding-right: 0.5rem;
+    }
+
+    .dch img {
+      width: 15rem;
+      height: 15rem;     
+      padding-left: 0.5rem;      
+    }
+
+    /*discografia*/
+    /*titulo discos*/
+
+    .discos{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 1rem;
     }
 
     .discos h3{
         font-size: large;
     }
 
+    /*disco 1 y 2*/
+
     .discos h4{
         font-size: large;
     }
 
+    /*img discos*/
+
     .discos img{
       width: 15rem;
       height: 15rem;
-      margin: 0 5rem;
+      margin: 0 auto;
     }
 
     .discos li{
       font-size: large;
-    }
-
-    .dch img {
-      width: 15rem;
-      height: 15rem;     
-      padding-left: 10px;
-      background-position: cover;
-    }
+    }    
 
     /*GALERIA*/
 
@@ -86,11 +114,13 @@
       grid-column-start: span 1;
     }
 
+    
+
+    /*CONTACTO*/
+
     form {
       background-position: center;
     }
-
-    /*CONTACTO*/
 
  /*escribenos*/
 
@@ -176,6 +206,8 @@
     padding: 0.6rem;        
   }
 
+  /*footer*/
+
   footer {
     margin: 1.5rem 0;
     font-size: medium;      
@@ -185,4 +217,17 @@
       height: 1.8rem;
     }
   }
+  }
+
+  @media (max-width: 414px){
+    .datos{
+      font-size: smaller;     
+      h3{
+        font-size: medium;
+      }
+    }
+
+    footer p{
+      text-align: center;
+    }
   }

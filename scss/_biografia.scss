@@ -33,7 +33,15 @@ $fuentesize:
   }
   h3 {  /*datos de interes*/
     text-decoration: underline;   
-  }
+  } 
+}
+
+.datosdos {
+  font-size: nth($fuentesize, 3);
+  font-family: $fonttxth234;
+  color: $colortxtbio;
+  font-weight: 900;
+  text-align: justify;  
 }
 
 .intrografia {
