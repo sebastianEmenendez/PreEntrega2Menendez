@@ -394,13 +394,14 @@ form .btn {
   .discos {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 1rem;
+    padding: 0 0.8rem;
   }
   .discos h3 {
     font-size: large;
   }
   /*disco 1 y 2*/
   .discos h4 {
+    text-align: left;
     font-size: large;
   }
   /*img discos*/
@@ -411,6 +412,7 @@ form .btn {
   }
   .discos li {
     font-size: large;
+    text-align: left;
   }
   /*GALERIA*/
   .container {
